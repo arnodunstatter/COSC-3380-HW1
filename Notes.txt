@@ -1,0 +1,26 @@
+4. Status: Corrected
+    Reason for error:
+        I think this was because i addressed my private schema.
+12. Status: Corrected
+    Reason for error:
+        Template was changed less than 24 hours before the assignment was due. 
+        More joins were added to convert the airport_code to the city in which the airport is located.
+14. Status: Corrected
+    Reason for error:
+        I think this was because i addressed my private schema.
+17. Status: Corrected
+    Reason for error:
+        Used statuses "On time" and "Delayed" when i should have used
+        "Arrived" and "Delayed"
+20. Status: Corrected
+    Reason for error:
+        Template and question was changed less than 24 hours before the assignment was due. 
+        Reworked the whole problem from the ground up. 
+
+Wrong:
+q04
+q12
+q14
+q17
+q20
+grade: 75

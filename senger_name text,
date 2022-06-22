@@ -1,0 +1,686 @@
+\d a
+\q
+\d
+\d arno_test
+DROP TABLE arno_test;
+\dt
+MAKE TABLE IF NOT EXIST arno 
+(
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+name TEXT );
+CREATE TABLE IF NOT EXIST arno 
+(
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+name TEXT );
+CREATE TABLE IF NOT EXISTS arno 
+(
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+name TEXT );
+CREATE TABLE IF NOT EXISTS arno 
+(
+id INTEGER AUTOINCREMENT,
+name TEXT );
+CREATE TABLE IF NOT EXISTS arno 
+(
+id INTEGER PRIMARY KEY,
+name TEXT );
+DROP TABLE arno
+;
+CREATE TABLE IF NOT EXISTS arno (
+ID INTEGER AUTOINCREMENT,
+Name TEXT);
+CREATE TABLE IF NOT EXISTS arno (
+ID INTEGER SERIAL PRIMARY KEY,
+Name TEXT);
+CREATE TABLE IF NOT EXISTS arno (
+ID SERIAL PRIMARY KEY,
+Name TEXT);
+\d
+\d arno
+\d arno_id_seq
+DROP TABLE arno_id_seq
+;
+DROP SEQUENCE arno_id_seq;
+DROP TABLE arno;
+DROP SEQUENCE arno_seq_id
+;
+\d
+CREATE TABLE arno (
+ID INTEGER,
+Name TEXT);
+\d
+\d arno
+INSERT INTO arno
+VALUES (1, "arno");
+INSERT INTO arno
+VALUES (ID = 1, Name = "arno dunstatter");
+INSERT INTO arno
+VALUES (ID  1, Name "arno dunstatter");
+INSERT INTO arno (id, name)
+VALUES (1, "arno");
+INSERT INTO arno
+(id, name)
+VALUES (1, "arno");
+INSERT INTO arno (id, name)
+VALUES (1, arno);
+INSERT INTO arno (id, name)
+VALUES (1);
+INSERT INTO arno (id, name)
+VALUES (1),(arno);
+INSERT INTO arno (id, name)
+VALUES (1, 'arno');
+\d arno
+\?
+\d d a
+\d a
+\d arno
+SELECT * FROM arno;
+DROP TABLE arno
+;
+\d
+CREATE TABLE IF NOT EXISTS Customers (
+ID INTEGER,
+NAME TEXT,
+AGE INTEGER,
+ADDRESS TEXT,
+SALARY FLOAT);
+ALTER TABLE Customers 
+VALUE (1, Ramesh, 32, Ahmedabad, 2000.00),
+(2, Khilan, 25, Delhi, 1500.00);
+ALTER TABLE Customers 
+VALUES (1, Ramesh, 32, Ahmedabad, 2000.00),
+(2, Khilan, 25, Delhi, 1500.00);
+INSERT INTO Customers 
+VALUES (1, Ramesh, 32, Ahmedabad, 2000.00),
+(2, Khilan, 25, Delhi, 1500.00);
+INSER INTO Customers (ID, NAME, AGE, ADDRESS, SALARY)
+VALUES (1, Ramesh, 32, Amedabad, 2000.00);
+INSERT INTO Customers (ID, NAME, AGE, ADDRESS, SALARY)
+VALUES (1, Ramesh, 32, Amedabad, 2000.00);
+INSERT INTO Customers (ID, NAME, AGE, ADDRESS, SALARY)
+VALUES (1, customers.name= Ramesh, 32, Amedabad, 2000.00);
+Select * from customers
+;
+INSERT INTO Customers
+VALUES (1, ram, 2, yes, 2.0);
+INSERT INTO Customers (id, name, age, address, salary)
+(1, ram, 2, yes, 2.0);
+INSERT INTO Customers (id, name)
+VALUES (1, "Ram");
+INSERT INTO Customers (id, name)
+VALUES (id 1, name "Ram");
+INSERT INTO Customers (id, name)
+VALUES (id = 1, name = "Ram");
+\sql
+\d
+\?
+\q
+size.sql
+;
+\?
+\q
+\q
+\i cartesian.sql
+\d
+DROP TABLE z
+\d
+DROP TABLE z;
+\d
+drop table if exists z;
+\d
+\i cartesian.sql
+\d a
+select * from a;
+\d b
+select * from a
+;
+select * from b;
+select * from A,B;
+clear
+\q
+\i cartesian.sql
+\i intersect.sql
+\i intersect.sql
+\i intersect.sql
+\i intersect.sql
+\i cartesian.sql
+\i cartesian.sql
+\i cartesian.sql
+\i cartesian.sql
+\i cartesian.sql
+\i cartesian.sql
+\i cartesian.sql
+\i cartesian.sql
+\i cartesian.sql
+\i cartesian.sql
+\i intersect.sql
+\i size.sql
+\d
+select * from n;
+select * from rvtest;
+create table z (
+id integer,
+name text);
+insert into z (id, name)
+values (1, "arno");
+\d
+select * from z;
+insert into z (1, "arno")
+;
+INSERT INTO z VALUES (1, "arno");
+INSERT INTO z VALUES (id, name), (1, "arno");
+DROP TABLE z;
+CREATE TABLE z (
+id INTEGER, name STRING);
+CREATE TABLE z (id integer);
+insert into z (1);
+insert into z values (1);
+select * from z;
+DROP TABLE z;
+CREATE TABLE z (id integer, name text);
+INSERT INTO z (id, name) VALUES (1, 'arno');
+select * from z;
+INSERT INTO z VALUES (2, "noah");
+INSERT INTO Z VALUES ("id"2,"name"'noah');
+INSERT INTO Z VALUES ("id" 2,"name" 'noah');
+INSERT INTO Z VALUES ("id" 2, "name" 'noah');
+INSERT INTO Z VALUES (2, 'noah');
+select * from z;
+delete from z where id = 2;
+select * from z;
+DROP TABLE z
+;
+\i intersect2.sql
+\i intersect2.sql
+\i intersect.sql
+\i intersect.sql
+\d
+create table c (i integer, j integer);
+insert into c values (1,2),(3,4);
+select * from c;
+create table d values (1,2),(5,6);
+create table d (i integer, j integer);
+insert into d values (1,2),(5,6);
+select * from d;
+select i,j from c
+intersect
+select i,j from d;
+select * from c
+intersect
+select * from d;
+select * from c;
+insert into d values (3,7);
+select * from d;
+select i from c
+intersect
+select i from d;
+\i size.sql
+\q
+select count(distinct *) from c;
+create table t (i integer, j integer);
+insert into t values (0,1),(1,0),(0,0),(0,1);
+select * from t;
+\i size.sql
+\i size.sql
+\i size.sql
+\q
+\i size.sql
+\i cartesian.sql
+\q
+\d
+select * from n;
+DROP TABLE n;
+select * from c;
+select * from t
+;
+select * from t INTERSECT select * from t;
+count(select * from t intersect select * from t);
+select count(* intersect *) from t;
+count(t);
+select count(*) from t;
+select count(* from t intersect * from t);
+select * from t
+;\q
+select * from t;
+select * from t
+intersect
+select * from t;
+create table Dt 
+select * from t
+intersect
+select * from t;
+select * from t
+intersect 
+select * from t
+into Dt;
+select * into Dt
+from t
+intersect
+select * from t;
+select * from Dt;
+DROP TABLE Dt;
+select * from t
+inner join on * from t;
+select * into Dt
+from t
+intersect
+select * from t
+select count() from Dt;
+select * into Dt
+from t
+intersect
+select * from t
+select count(*) from Dt;
+select count() from a;
+select count(*) from a;
+\d
+select * into Dt
+from t
+intersect
+select * from t
+;
+select count(*) from Dt;
+\i size.sql
+\q
+\i size.sql
+DROP TABLE Dt;
+\i size.sql
+\i size.sql
+DROP TABLE Dt;
+\i size.sql
+select * from t;
+select count(distinct i) from t;
+\i size.sql
+\i size.sql
+\i size.sql
+\i size.sql
+\i size.sql
+\i size.sql
+\i size.sql
+\i size.sql
+\i size.sql
+\i size.sql
+\i size.sql
+\i size.sql
+\?
+\? IF
+\IF
+\q
+set schema 'public'
+\d
+select * from r;
+clear
+\q
+\d
+select * from c;
+select * from r;
+select * from rvtest;
+set schema 'airline';
+\dt
+\d
+select * from aircraft;
+clear
+select * from booking;
+select * from booking;
+select * from booking;
+clear;
+set schema 'public';
+\d
+select x,
+   case
+      when y > z then 'greater'
+      when y < z then 'lesser'
+      when y = z then 'equal'
+   end inequality
+from hw1_example
+where x > 4;
+SELECT x,
+        CASE 
+            WHEN y > z THEN 'GREATER' 
+            WHEN y < z THEN 'LESSER'
+            WHEN y = z THEN 'EQUAL'
+        END inequality
+FROM hw1_example
+WHERE x > 4;
+\q
+set schema 'aireline';
+set schema 'airline';
+SELECT count(x.passenger_name)
+FROM 
+(
+    SELECT book_ref, passenger_name
+    FROM airline.ticket
+    WHERE book_ref LIKE '04F%'
+) AS x
+HAVING count(x.passenger_name) = 2;
+SELECT book_ref, passenger_name
+    FROM airline.ticket
+    WHERE book_ref LIKE '04F%';
+SELECT book_ref, count(book_ref)
+    FROM airline.ticket
+    WHERE book_ref LIKE '04F%'
+    GROUP BY book_ref;
+SELECT book_ref, count(book_ref)
+    FROM airline.ticket
+    WHERE book_ref LIKE '04F%'
+    GROUP BY book_ref;
+SELECT book_ref, count
+FROM 
+(
+    SELECT book_ref, count(book_ref)
+    FROM airline.ticket
+    WHERE book_ref LIKE '04F%'
+    GROUP BY book_ref
+) AS x
+HAVING count = 3;
+SELECT count
+FROM 
+(
+    SELECT book_ref, count(book_ref)
+    FROM airline.ticket
+    WHERE book_ref LIKE '04F%'
+    GROUP BY book_ref
+) AS x
+HAVING count = 3;
+SELECT count
+FROM 
+(
+    SELECT book_ref, count(book_ref)
+    FROM airline.ticket
+    WHERE book_ref LIKE '04F%'
+    GROUP BY book_ref
+) AS x
+HAVING count = 3;
+    SELECT book_ref, count(book_ref)
+    FROM airline.ticket
+    WHERE book_ref LIKE '04F%'
+    GROUP BY book_ref;
+SELECT book_ref, count
+FROM 
+(
+    SELECT book_ref, count(book_ref)
+    FROM airline.ticket
+    WHERE book_ref LIKE '04F%'
+    GROUP BY book_ref
+) AS x
+WHERE count = 3;
+\d
+\d booking
+select * from booking;
+select * from booking where book_date like '2018%';
+select * from booking;
+set schema 'public';
+select * from hw1_example;
+set schema 'airline';
+select book-ref, EXTRACT(MONTH FROM book_date), total_amount from airline.booking;
+select book_ref, EXTRACT(MONTH FROM book_date), total_amount from airline.booking;
+\q
+\q
+WHERE aircraft_code IN (
+    SELECT aircraft_code FROM airline.aircraft
+    WHERE model ILIKE '%Airbus%'
+\q
+\i q08.sql
+\i q08.sql
+\i q08.sql
+\i q08.sql
+\i q08.sql
+\i q08.sql
+select * from airport;
+select * from airline.airport;
+\d
+set schema 'airline';
+\d
+\d ticket
+\d flight
+\d booking
+select * from booking;
+select * from ticket_flight;
+\d ticket
+\d booking
+select * from booking;
+select * from booking order by book_ref;
+select * from ticket order by book_ref;
+select * from ticket where book_ref is null;
+select * from ticket order by book_ref;
+\d
+select count(*) from booking;
+select count(*) from ticket;
+\i q11.sql
+\i q11.sql
+\i q11.sql
+select * from flight;
+select * from airline.flight where scheduled_departure < actual_departure;
+\d flight
+select * from aircraft;
+select * from flight;
+select * from flight where status like 'delayed';
+select * from flight where flight.status like 'delayed';
+select * from flight where flight.status like 'Delayed';
+d
+\d
+select * from ticket;
+select * from ticket;
+select * from booking;
+select * from ticket;
+select * from booking;
+select * from seat;
+select * from ticket;
+select * from boarding_pass;
+select * from seat;
+select * from ticket;
+select * from booking;
+select * from flight;
+\d booking
+\d seat
+\d flight
+\d ticket
+\d ticket_flight
+\d airport
+select * from ticket_flight;
+select * from ticket_flight;
+select * from ticket_flight order by flight_id;
+select * from ticket_flight order by flight_id;
+select * from airport;
+select * from flight;
+select * from flight order by flight_id;
+select * from flight order by flight_id;
+\d
+select * from flight order by flight_id;
+select * from flight order by flight_id;
+select * from seat;
+select * from ticket;
+select * from ticket_flight;
+select * from ticket_flight;
+select flight_id, amount from ticket_flight order by flight_id;
+select flight_id, amount from ticket_flight order by flight_id;*
+select * from ticket_flight order by flight_id;
+select * from ticket_flight order by flight_id;
+select * from ticket_flight order by flight_id;
+select * from flight;
+select * from flight;
+select * from airport;
+select * from airport order by city;
+select * from ticket;
+select * from ticket_flight;
+select * from flight;
+select * from seat;
+select * from ticket_flight;
+\d ticket_flight
+select count(*),sum(amount) from ticket_flight group by fare_conditions;
+select count(*),sum(amount),fare_conditions from ticket_flight group by fare_conditions;
+select * from flight;
+select * from flight;
+\d
+\d ticket
+ticket_flight
+\d ticket_flight
+\d airport
+\d boarding_pass
+\d flight
+\d
+\d airport
+\d flight
+\d aircraft
+select * from aircraft;
+select * from aircraft;
+SELECT aircraft_code FROM airline.aircraft
+    WHERE model ILIKE '%Airbus%';
+\d airport
+set schema 'dbs031';
+\d
+set schema 'airline';
+select * from flight;
+select * from airport;
+\q
+\d
+set schema 'airline';
+select * from airport where city ilike '%Belgorod%';
+\q flight
+\i q16.sql
+\i q16.sql
+\i q16.sql
+\i q16.sql
+\i q16.sql
+\i q16.sql
+\i q16.sql
+\i q16.sql
+\i q16.sql
+\i q16.sql
+\i q16.sql
+\i q17.sql
+\i q17.sql
+\i q17.sql
+\i q17.sql
+\i q17.sql
+\i q17.sql
+\i q17.sql
+\i q17.sql
+\i q17.sql
+\i q17.sql
+\i q17.sql
+\i q17.sql
+\i q17.sql
+\i q17.sql
+\i q17.sql
+\i q18.sql
+\i q18.sql
+\i q18.sql
+\i q18.sql
+\i q18.sql
+\i q18.sql
+\i q18.sql
+\i q18.sql
+\i q15.sql
+\i q15.sql
+select schema_name schema_info.schemata;
+select schema_name from information_schema.schemata;
+SELECT ticket_no as num_invalid
+FROM airline.ticket_flight
+LEFT JOIN airline.ticket USING(ticket_no)
+WHERE book_ref IS NULL;
+\i q11.sql
+\i q19.sql
+\i q19.sql
+\i q19.sql
+\i q19.sql
+\i q19.sql
+\i q19.sql
+\i q19.sql
+\i q19.sql
+\i q20.sql
+\i q20.sql
+\i q20.sql
+\i q20.sql
+\i q20.sql
+\i q20.sql
+\i q20.sql
+\i q20.sql
+\i q20.sql
+\i q20.sql
+\i q20.sql
+\i q20.sql
+\i q20.sql
+\i q20.sql
+\i q20.sql
+\i q20.sql
+\i q20.sql
+\i q20.sql
+\i q20.sql
+\i q20.sql
+\i q20.sql
+set schema 'airline';
+\d
+\d flight
+\d aircraft
+\d airport
+select * from airport;
+select * from airport;
+select * from airport;
+\d ticket_flight
+\d ticket
+\d flight
+\d
+\d flight
+\d ticket_flight
+\d
+\d flight
+\d ticket_flight
+\d ticket
+\d booking
+select sum(amount) from ticket where passenger_name ILIKE 'SERGEY RODIONOV';
+\i q12.sql
+\i q12.sql
+\d
+select * from airline.ticket;
+\q
+\d airline
+\d airline.flight_ticket
+select * from airline.flight_ticket;
+select * from airline.ticket_flight
+;
+q
+\q
+set schema 'airline';
+\d
+\d flight
+select * from flight join airport using (departure_airport as d_city, arrival_airport as a_city);
+select * from flight join airport using (departure_airport);
+select * from flight join airport using (airport_code);
+\d airport
+select * from flight join airport using(airport_code = departure_airport)
+;
+select * from flight join airport using(airport_code as departure_airport)
+;
+select * from flight join airport using(airport_code as departure_airport);
+select * from flight;
+\i q17.sql
+\i hw1/q17.sql
+set schema 'airline';
+set schema 'dbs031';
+\i q04.sql
+select * from q04;
+select * from q04_airport_europe;
+\i q14.sql
+\i q17.sql
+\i q20.sql
+SELECT * FROM dbs031.q17_belgorod;
+select * from q17_belgorod;
+\i q12.sql
+select * from q12_delayed_boeing;
+\q
+set schema 'dbds031';
+\d
+set schema 'dbs031';
+\d
+\i q17.sql
+\i q20.sql
+select * from q20_sergey;
+\i q04.sql
+\i q04.sql
+\i q12.sql
+\i q14.sql
+\i q17.sql
+\i q17.sql
+\i q20.sql
+\s
